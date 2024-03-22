@@ -18,7 +18,7 @@
     ```
     pip install -r requirements.txt
     ```
-4. Create .env file using .env.example
+4. Create **.env** file using .env.example
 5. Run migration
     ```
     python3 manage.py migrate
