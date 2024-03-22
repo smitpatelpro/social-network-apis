@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - 8000:80
+    volumes:
+      - static_volume:/usr/src/app/static
+    depends_on:
+      - web
+    restart: "on-failure"
+
+  web:
+    build: .
+    command: sh -c "python manage.py migrate && python manage.py collectstatic --noinput && uvicorn --host 0.0.0.0 --port 8000 social_network.asgi:application"
+    volumes:
+      - .:/usr/src/app/
+      - static_volume:/usr/src/app/static
+    # Don't expose direct access. it should be only via Nginx
+    # ports:
+    #   - 8000:8000
+    env_file:
+      - ./.env
+    restart: "on-failure"
+ 
+volumes:
+  static_volume:

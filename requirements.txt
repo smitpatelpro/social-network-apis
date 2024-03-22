@@ -1,0 +1,20 @@
+Django==5.0.3
+djangorestframework==3.15.0
+
+# Env for Secrets management
+python-decouple==3.8
+
+# PostreSQL
+psycopg2-binary==2.9.9
+
+# Application Server
+uvicorn==0.29.0
+
+# JWT Auth
+djangorestframework-simplejwt==5.3.1
+
+# Code Formatter
+black==24.3.0
+
+# Swagger
+drf-yasg==1.21.7
