@@ -8,9 +8,9 @@ from decouple import config
 
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
-SECRET_KEY = config('SECRET_KEY', default="dfgsdfgdgsdfg")
+SECRET_KEY = config("SECRET_KEY", default="dfgsdfgdgsdfg")
 
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = config("DEBUG", default=False, cast=bool)
 
 ALLOWED_HOSTS = []
 
@@ -123,17 +123,12 @@ AUTH_USER_MODEL = "user.User"
 CSRF_TRUSTED_ORIGINS = [
     "http://*:8000",
     "https://*:8000",
-    "http://*.localhost:*"
-    "http://0.0.0.0"
+    "http://*.localhost:*" "http://0.0.0.0",
 ]
 
 SWAGGER_SETTINGS = {
-   'SECURITY_DEFINITIONS': {
-      'Bearer': {
-            'type': 'apiKey',
-            'name': 'Authorization',
-            'in': 'header'
-      }
-   },
-   'USE_SESSION_AUTH': False
+    "SECURITY_DEFINITIONS": {
+        "Bearer": {"type": "apiKey", "name": "Authorization", "in": "header"}
+    },
+    "USE_SESSION_AUTH": False,
 }
