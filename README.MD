@@ -1,7 +1,7 @@
 # Setup Steps
 ## Run without docker
 1. Recommended Python Version: 3.11.4
-    for widows use `python` command and for linux use `python3` in below commands
+    - for widows use `python` command and for linux use `python3` in below commands
 2. Create virtual environment
     - for linux
         ```
