@@ -38,6 +38,7 @@ python3 manage.py collectstatic
         ```
 
 ## Run using Docker
+Create **.env** file using .env.example and then run:
 ```
 docker-compose up
 ```
