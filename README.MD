@@ -26,7 +26,7 @@
     ```
 6. Run collectstatic for admin
 ```
-python3 manage.py collectstatic
+python3 manage.py collectstatic --noinput
 ```
 7. Run server
     - for development
