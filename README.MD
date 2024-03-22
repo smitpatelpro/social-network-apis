@@ -12,6 +12,7 @@
         python -m venv env
         cd env/Scripts
         activate
+        cd ../..
         ```
 3. Install requirements
     ```
