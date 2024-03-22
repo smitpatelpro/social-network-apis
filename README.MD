@@ -34,7 +34,7 @@ python3 manage.py collectstatic --noinput
         python3 manage.py runserver
         ```
     - for production
-        - NOTE: uvcorn will not serve static files. So, swagger UI will not work
+        - NOTE: uvcorn will not serve static files. So, swagger UI will not work. So, for production, please run docker.
         ```
         uvicorn --host 0.0.0.0 --port 8000 social_network.asgi:application
         ```
