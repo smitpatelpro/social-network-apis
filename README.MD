@@ -60,3 +60,6 @@ When server is running, swaager and redoc are available as below:
 
 ## Swagger UI
 ![Swagger](swagger.png "Swagger UI")
+
+## Postman Collection
+Postman collection is given in `social-network.postman_collection.json` file located at project root directory.
