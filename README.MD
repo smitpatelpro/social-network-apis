@@ -1,4 +1,4 @@
-# Social Network connection APIs 
+# Social Network Connection APIs 
 Django and DRF based basic social network connection APIs
 
 ## Run without docker
