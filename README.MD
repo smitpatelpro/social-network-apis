@@ -1,5 +1,5 @@
-# Social Network APIs 
-Django and DRF based basic social network APIs
+# Social Network connection APIs 
+Django and DRF based basic social network connection APIs
 
 ## Run without docker
 1. Recommended Python Version: 3.11.4
